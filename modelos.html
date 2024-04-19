@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Mi Sitio Web</title>
+    <style>
+      /* CSS actualizado con los colores de fondo solicitados */
+      .fixed-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        z-index: 100;
+        background-color: white; /* Fondo blanco para la sección de modelos */
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .model-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #222;
+        padding: 5px 0;
+        z-index: 101;
+      }
+
+      .model-menu button {
+        color: white;
+        padding: 5px 15px;
+        text-decoration: none;
+        background: none;
+        border: none;
+        font-size: 16px;
+      }
+
+      .ar-model-section {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .ar-model-section model-viewer {
+        width: 50%;
+        height: calc(100% - 40px); /* Height minus the menu height */
+        position: absolute;
+        top: 40px;
+      }
+
+      .scrollable-content {
+        margin-left: 50%;
+        overflow-y: scroll;
+        height: 100vh;
+        padding: 20px;
+        background-color: black; /* Fondo negro para el área de texto */
+        color: white; /* Texto en blanco para contraste */
+      }
+
+      .text-section {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fixed-menu">
+      <div class="model-menu">
+        <a href="index.html"
+          ><button>
+            INICIO
+          </button></a
+        >
+        <button
+          onclick="changeModel('https://uploads.codesandbox.io/uploads/user/324dad70-7e05-4c34-9f8b-9f66dc7c885a/3jg0-BombaDeInfusion.glb')"
+        >
+          Bomba De Infusion
+        </button>
+
+        <button
+          onclick="changeModel('https://uploads.codesandbox.io/uploads/user/324dad70-7e05-4c34-9f8b-9f66dc7c885a/dprh-Glucometro.glb')"
+        >
+          Glucometro
+        </button>
+
+        <button onclick="changeModel('LINK INCUBADORA">
+          Incubadora
+        </button>
+
+        <button
+          onclick="changeModel('https://uploads.codesandbox.io/uploads/user/324dad70-7e05-4c34-9f8b-9f66dc7c885a/DgfJ-ElectroBisturi+(1).glb')"
+        >
+          Electrobisturí
+        </button>
+
+        <button
+          onclick="changeModel('https://uploads.codesandbox.io/uploads/user/324dad70-7e05-4c34-9f8b-9f66dc7c885a/U8wy-microscopio.glb')"
+        >
+          Microscopio
+        </button>
+        <button
+          onclick="changeModel('https://uploads.codesandbox.io/uploads/user/324dad70-7e05-4c34-9f8b-9f66dc7c885a/8i0X-Electrocar.glb')"
+        >
+          Electrocardiógrafo
+        </button>
+      </div>
+
+      <div class="ar-model-section">
+        <model-viewer
+          id="main-model-viewer"
+          alt="Modelo 3D"
+          src="BombaDeInfusion.glb"
+          ar
+          camera-controls
+        ></model-viewer>
+      </div>
+    </div>
+
+    <div class="scrollable-content">
+      <div class="text-section">
+        <h1>Bomba de infusión</h1>
+        <p>
+          <b>
+            Una bomba de infusión es un dispositivo médico utilizado para
+            administrar de manera controlada y precisa fluidos como
+            medicamentos, soluciones intravenosas, nutrientes o sangre a un
+            paciente a lo largo de un período de tiempo determinado. Se utiliza
+            en entornos clínicos y hospitalarios.
+          </b>
+        </p>
+      </div>
+      <div class="text-section">
+        <h1>Electrobisturí</h1>
+        <p>
+          <b>
+            El electrobisturí es un elemento médico que se usa en cirugía para
+            cortar, coagular y vaporizar tejido biológico. Proporciona
+            precisión, control del sangrado y minimiza el daño a tejidos
+            circundantes, siendo esencial en cirugías de diversos tipos,
+            incluyendo procedimientos mínimamente invasivos.
+          </b>
+        </p>
+      </div>
+      <div class="text-section">
+        <h1>Microscopio</h1>
+        <p>
+          <b>
+            El microscopio en un elemento utilizado en la biomedica para ampliar
+            y visualizar objetos y estructuras pequeñas que son invisibles o
+            difíciles de observar a simple vista. Su propósito principal es
+            permitir el estudio detallado de microorganismos, células, tejidos,
+            partículas submicroscópicas y otros elementos en campos como la
+            biología, la medicina, la ciencia de materiales y la investigación
+            científica. El microscopio es esencial para ampliar nuestro
+            entendimiento de la biología y la ciencia en general, lo que
+            contribuye al avance del conocimiento y la resolución de problemas
+            en diversas disciplinas.
+          </b>
+        </p>
+      </div>
+      <div class="text-section">
+        <h1>Glucometro</h1>
+        <p>
+          <b>
+            El glucómetro es un instrumento medico que se utiliza para medir los
+            niveles de glucosa en la sangre, lo que es esencial para el control
+            y manejo de la diabetes. Permite a los pacientes diabéticos
+            monitorear sus niveles de azúcar en sangre, lo que ayuda a tomar
+            decisiones sobre la dieta, la medicación y el estilo de vida,
+            contribuyendo al manejo efectivo de la enfermedad y la prevención de
+            complicaciones.
+          </b>
+        </p>
+      </div>
+      <div class="text-section">
+        <h1>Electrocardigrafo</h1>
+        <p>
+          <b>
+            Los electrocardiógrafos son equipos médicos indispensables en el
+            desarrollo de la prestación de los servicios de salud. Su labor es
+            esencial en el diagnóstico de enfermedades cardiacas, arritmias y
+            cualquier tipo de anomalía en el corazón o sus cavidades. Su
+            funcionamiento consiste en el registro de la actividad eléctrica del
+            corazón mediante electrodos que son puestos en las extremidades
+            superiores e inferiores del paciente. El resultado de dicho análisis
+            es un documento que registra los datos llamados electrocardiograma
+            (ECG).
+          </b>
+        </p>
+      </div>
+      <div class="text-section">
+        <h1>Incubadora</h1>
+        <p>
+          <b>
+            Una incubadora neonatal es un equipo médico diseñado para
+            proporcionar un entorno controlado y seguro para el cuidado de bebés
+            prematuros o recién nacidos con problemas de salud. Estas
+            incubadoras están diseñadas para mantener una temperatura constante,
+            niveles adecuados de humedad y proporcionar protección contra
+            infecciones y factores ambientales adversos. También permiten un
+            fácil acceso para el personal médico y una observación continua del
+            bebé. Las incubadoras neonatales son esenciales en la atención de
+            bebés prematuros y enfermos, ya que ayudan a mantener una
+            temperatura corporal adecuada y proporcionan un ambiente propicio
+            para su desarrollo y recuperación.
+          </b>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      function changeModel(modelSrc) {
+        document.getElementById("main-model-viewer").src = modelSrc;
+      }
+    </script>
+
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"
+    ></script>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/Pagina1.css" />
+  
+    <title>Mi Sitio Web</title>
+  </head>
+  <body bgcolor="">
+    <div class="backgroundPagina1"></div>
+    <div class="header">
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/Logo-uao.png" /></a>
+      </div>
+    </div>
+
+    <div class="content1">
+      <div class="ar-model-section">
+         <model-viewer
+          alt="Modelo 3D con AR"
+          poster=""
+          src="assets/3d/Caminadora.glb"
+          ar
+          camera-controls
+        >   
+        <!--------------------------------------------------------------------  BOTONES ------------ -->
+        <!-- 
+        <button
+            id="button-screen"
+            class="hotspot"
+            slot="hotspot-screen"
+            data-position="1 0.8 1.2"
+            data-normal="0 0 1"
+          ></button>
+
+          <button
+            id="button-screen1"
+            class="hotspot"
+            slot="hotspot-screen1"
+            data-position="0 0 -1.18"
+            data-normal="0 0 -1"
+          ></button>
+
+          <button
+            id="button-screen2"
+            class="hotspot"
+            slot="hotspot-screen2"
+            data-position="1.3 0.8 1.2"
+            data-normal="0 0 1"
+          ></button>
+
+          <button
+            id="button-screen3"
+            class="hotspot"
+            slot="hotspot-screen3"
+            data-position="1.35 0.63 1.2"
+            data-normal="0 0 1"
+          ></button>
+
+          <button
+            id="button-screen4"
+            class="hotspot"
+            slot="hotspot-screen4"
+            data-position="0.3 -1.4 1.6"
+            data-normal="0 0 1"
+          ></button>
+
+          <button
+            id="button-screen5"
+            class="hotspot"
+            slot="hotspot-screen5"
+            data-position="0.3 -1 1.55"
+            data-normal="0 0 1"
+          ></button>
+
+          <button
+            id="button-screen6"
+            class="hotspot"
+            slot="hotspot-screen6"
+            data-position="0.85 -1.7 -1.25"
+            data-normal="0 0 -1"
+          ></button>
+
+          <button
+            id="button-screen7"
+            class="hotspot"
+            slot="hotspot-screen7"
+            data-position="1.25 -1.55 1.65"
+            data-normal="0 0 1"
+          ></button>
+
+          <button
+            id="button-screen8"
+            class="hotspot"
+            slot="hotspot-screen8"
+            data-position="-1.65 0.45 -0.5"
+            data-normal="0 0 -1"
+          ></button>
+
+          <button
+            id="button-screen9"
+            class="hotspot"
+            slot="hotspot-screen9"
+            data-position="-1.65 0.1 -0.5"
+            data-normal="0 0 -1"
+          ></button>
+
+          <button
+            id="button-screen10"
+            class="hotspot"
+            slot="hotspot-screen10"
+            data-position="-1.65 -0.4 -0.5"
+            data-normal="0 0 -1"
+          ></button>
+
+          <button
+            id="button-screen11"
+            class="hotspot"
+            slot="hotspot-screen11"
+            data-position="-1.65 -0.8 -0.5"
+            data-normal="0 0 -1"
+          ></button>
+
+          <button
+            id="button-screen12"
+            class="hotspot"
+            slot="hotspot-screen12"
+            data-position="0.93 0.63 1.2"
+            data-normal="0 0 1"
+          ></button>
+
+          <button
+            id="button-screen13"
+            class="hotspot"
+            slot="hotspot-screen13"
+            data-position="1.8 0 0"
+            data-normal="1 0 0"
+          ></button>
+
+          <button
+            id="button-screen14"
+            class="hotspot"
+            slot="hotspot-screen14"
+            data-position="-1.9 0.4 0.32"
+            data-normal="-1 0 0"
+          ></button> 
+        -->
+        </model-viewer>
+       <!--------------------------------------------------------------------  SLIDES------------ -->
+          <!---
+        <div class="slider">
+          <div class="slides">
+            <button
+              class="slide selected"
+              onclick="switchModel(this, 'Beneheart_D6')"
+            >
+              <img src="../assets/img/portada.jpg" alt="Modelo 1" />
+            </button>
+            <button
+              class="slide selected"
+              onclick="switchModel(this, 'desfibrilador')"
+            >
+              <img src="../assets/img/paletas.jpg" alt="Modelo 2" />
+            </button>
+            <button
+              class="slide selected"
+              onclick="switchModel(this, 'electrodos')"
+            >
+              <img src="../assets/img/electrodo.jpg" alt="Modelo 3" />
+            </button>
+            <button
+              class="slide selected"
+              onclick="switchModel(this, 'presion')"
+            >
+              <img src="../assets/img/presion.webp" alt="Modelo 4" />
+            </button>
+            <button class="slide selected" onclick="switchModel(this, 'SPO2')">
+              <img src="../assets/img/spo2.webp" alt="Modelo 5" />
+            </button>
+          </div>
+        </div>   -->
+      </div>
+ <h1>Banda Caminadora</h1>
+      <div class="video">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/JBcxwdCbQ3U?si=6f3ZWf9sQ8BfTIuI"
+        
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="text-section ">
+        <h2>Descripcion</h2>
+        <p class="">
+          La Banda Caminadora Trackmaster® Bandas para correr de alta resistencia específicamente diseñados para ser interconectados con y controlado por cardiac y sistemas de prueba de estrés pulmonar.
+        </p>
+
+        <section id="section_one">
+          <h2>Características y especificaciones:</h2>
+          <ul>
+            <li>Ciclo de arranque suave y silencioso Inversor.</li>
+            <li>Cubierta acolchada de bajo perfil (Estándar) para la comodidad del paciente y seguridad.</li>
+            <li>Banda para correr de 22 "de ancho.</li>
+            <li>Banda patentada MasterTrack® El sistema de alineación elimina Cinturones descentrados.</li>
+            <li>Excepcionalmente precisa, velocidad de autocalibrado y elevación.</li>
+            <li>Botón de parada de emergencia prominente.</li>
+            <li>Mantenimiento mínimo.</li>
+        </ul>
+        
+      
+           
+          
+        </section>
+        <br />
+
+        <section id="section_two">
+          <h2>QUICK START</h2>
+          <p>
+            Press the START switch for a quick start of the treadmill, no user information required, a
+three-second count down is displayed before the treadmill belt begins to move. Speed and
+Incline may be adjusted by pressing the plus or minus keys in the speed or Incline windows.
+Elapsed time and distance are displayed in the Time and Distance windows. 
+          </p>
+        </section>
+        <br />
+
+        <section id="section_tres">
+          <h2>tema 3</h2>
+       <p> texto defecto</p>
+        </section>
+        <br />
+
+        <section id="section_cuatro">
+          <h2>tema</h2>
+          <p> texto defecto</p>
+        </section>
+        <br />
+
+        <section id="section_cinco">
+          <h2>tema</h2>
+          <p> texto defecto</p>
+        </section>
+        <br />
+
+        <section id="section_seis">
+          <h2>tema</h2>
+          <p> texto defecto</p>
+        </section>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"
+    ></script>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
